@@ -1,0 +1,26 @@
+﻿<Window x:Class="FluentLaunch.SortingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FluentLaunch"
+        mc:Ignorable="d"
+        Title="SortingWindow" Height="450" Width="450" WindowStartupLocation="CenterOwner">
+    <Window.Template>
+        <ControlTemplate TargetType="Window">
+            <AdornerDecorator>
+                <ContentPresenter />
+            </AdornerDecorator>
+        </ControlTemplate>
+    </Window.Template>
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0 1 0 0" CaptionHeight="0" UseAeroCaptionButtons="False"
+                      NonClientFrameEdges="None" />
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>
